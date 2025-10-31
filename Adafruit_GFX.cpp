@@ -1407,7 +1407,7 @@ size_t Adafruit_GFX::write(uint8_t c) {
     @param  s  Desired text size. 1 is default 6x8, 2 is 12x16, 3 is 18x24, etc
 */
 /**************************************************************************/
-void Adafruit_GFX::setTextSize(uint8_t s) { setTextSize(s, s); }
+void Adafruit_GFX::setTextSize(float s) { setTextSize(s, s); }
 
 /**************************************************************************/
 /*!
@@ -1417,7 +1417,7 @@ void Adafruit_GFX::setTextSize(uint8_t s) { setTextSize(s, s); }
     @param  s_y  Desired text width magnification level in Y-axis. 1 is default
 */
 /**************************************************************************/
-void Adafruit_GFX::setTextSize(uint8_t s_x, uint8_t s_y) {
+void Adafruit_GFX::setTextSize(float s_x, float s_y) {
   textsize_x = (s_x > 0) ? s_x : 1;
   textsize_y = (s_y > 0) ? s_y : 1;
 }
